@@ -12,7 +12,7 @@
 * `git reset HEAD archivo` quita el archivo del área de preparación y de la lista de rastreo (sin borrarlo del directorio de trabajo)
 * `git checkout -- archivos` recupera archivos desde el área de preparación hacia el directorio de trabajo (la versión de la última vez que se les hizo "add", véase *commit* para recuperar cualquier versión anterior), siempre y cuando se estén rastreando y por alguna razón se hayan borrado (por ejemplo, mediante `rm` de Unix), o modificado (por ejemplo, con un editor o IDE).
 
-Workflow:
+###Workflows:
 
 * Recuperación de archivos borrados
 	* crea un archivo.
@@ -31,4 +31,3 @@ Workflow:
 * revisar una versión anterior
 * regresarse a una versión anterior
 * revisar diferencias entre commits
-*  
