@@ -36,6 +36,5 @@ color.diff=auto
 Ayuda
 
 	$ git help config
+	$ git --help 	#muestra los comandos más usados.
 	
-----
-probando macdown (by jucaoma)
