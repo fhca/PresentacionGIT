@@ -38,3 +38,24 @@ Ayuda
 	$ git help config
 	$ git --help 	#muestra los comandos más usados.
 	
+
+
+
+Ordenar:
+
+
+```
+$ git diff
+muestra las líneas exactas que fueron añadidas/elimiadas/modificadas
+
+$ git commit
+confirma los cambios preparados (lo que está en stagin 
+area)
+
+$ git  
+$ git 
+$ git 
+```
+
+
+	
