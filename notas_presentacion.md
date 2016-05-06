@@ -53,3 +53,6 @@ Ayuda
 - Tracked - rastreado.
 - Untracked - no rastreado.
 - Branch - rama.
+- Pull - 
+- Push - 
+- 
