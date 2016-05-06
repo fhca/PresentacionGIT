@@ -35,11 +35,21 @@ A la etapa anterior se le llama *preparación* del proyecto y sus archivos, el p
 * `git commit -a -m "msg"` como antes de confirmar, hay que actualizar el área de preparación añadiéndole los archivos rastreados modificados, esto hace las dos operaciones en una sola instrucción. Con la opción `-m "msg"` permite agregar un texto descriptivo sin abrir el editor.
 * `git diff --staged` muestra las diferencias (internas) entre archivos preparados y archivos confirmados (sinónimo de `git diff --cached`).
 * `git log` muestra el historial de las confirmaciones
-* *`git log -p -2` muestra las diferencias (internas) de las últimas dos confirmaciones.
+* `git log -p -2` muestra las diferencias (internas) de las últimas dos confirmaciones.
+* `git log --oneline --graph` Dibuja las líneas de las ramas de las confirmaciones realizadas en el proyecto actual, con el número de confirmación y la descripción breve.
 * `git commit --amend` confirma de nuevo el área preparada (posiblemente actualizada) o permite modificar el msg, sin registrar un commit extra.
-* 
 
-
+###Workflows
 * revisar una versión anterior
 * regresarse a una versión anterior
 * revisar diferencias entre commits
+
+##push
+Luego de confirmar archivos, las veces que sea necesario, es posible enviarlos para su control de versiones a servidores. Esto se puede hacer mediante los protocolos `http`, `https`, `ssh`, `git`, etc.
+
+* `git clone https://github.com/fhca/PresentacionGIT` *baja*, *descarga* o *clona* el contenido de un *repositorio en un servidor* (*repositorio externo* de GitHub, en este caso). Crea el directorio de trabajo, PresentacionGIT en este caso, y lo deja listo para su trabajo con Git localmente.
+* `git remote` dice el alias del repositorio remoto actualmente utilizado.
+* `git remote -v` de haber varios, con esta opción muestra las direcciones URL utilizadas como repositorios remotos.
+* `git push` una vez trabajados los archivos localmente, preparados y con las confirmaciones necesarias, esta instrucción envía al servidor los archivos confirmados que difieran de los del repositorio remoto.
+* `git remote add juca https://github.com/jucaoma/PresentacionGIT` añade un nuevo repositorio remoto al proyecto actual. en adelante se puede utilizar la abreviatura, "juca" en este caso, para referirse a la URL del repositorio externo.
+* `git fetch juca` permite traer el contenido del repositorio juca que no se tenga en el actual. Se puede tener toda cantidad de remotos como sea necesario, cuidando de tener una abreviatura diferente para cada uno. El default para un proyecto 
