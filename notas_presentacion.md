@@ -38,4 +38,18 @@ Ayuda
 	$ git help config
 	
 ----
-probando macdown (by jucaoma)
+##Notas:
+- No se depende de una conexión a la red para trabajar con git.
+- En git todo es identificado por checksum.
+- Todo commit es una copia instantanea de todo el respositorio.
+- Todo commit es recuperable, incluso después de `--amend` o desde ramas eliminadas.
+- Por las dos razones anteriores no se recomienda guardar información sensible (por ejemplo contraseñas).
+
+##Glosario:
+- Repositorio local - Archivos del sistema git almacenados en el directorio de trabajo.
+- Repositorio remoto - repositorio que no es local.
+- Stagin area - area de preparación.
+- Commited / commited - confirmado.
+- Tracked - rastreado.
+- Untracked - no rastreado.
+- Branch - rama.
