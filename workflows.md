@@ -1,6 +1,16 @@
 #Workflows - Flujos de trabajo
 
 ##add
+
+
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+
+
 * `git add archivo` agrega el archivo a la lista de *rastreados* (tracked) y los *prepara*, o sea, copia su contenido al *área de preparación* (staged).
 * `git status` muestra el estado de los archivos, aparecen archivos no rastreados (untracked), añadidos (new file), etc.
 * `git rm -f archivos` borra archivos del directorio de trabajo, del rastreo y del área de preparación.
