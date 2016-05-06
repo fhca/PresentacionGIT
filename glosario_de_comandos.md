@@ -33,9 +33,11 @@ $ git log
 Historial de commits. En orden cronológico inverso. Muestra el SHA1, identida del autor, fecha, hora y mensaje del commit.
 -p #muestra las diferencias introducidas en cada commit.
 -3 #muestra los últimos 3 commits.
+--oneline #muestra cada confirmación en una sóla línea.
 --stat #muestra estadísticas
 --pretty [oneline, short, full, fuller, formar...
 --graph
+--grep <texto> #busca <texto> en los mensajes de las confirmaciones.
 --since=[2.weeks]ó[2016-5-1]
 --until
 etc...
