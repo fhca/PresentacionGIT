@@ -1,8 +1,5 @@
 #Workflows - Flujos de trabajo
 
-##Revisión de comandos básicos
-* add / commit / status / log
-
 ##add
 * `git add archivo` agrega el archivo a la lista de *rastreados* (tracked) y los *prepara*, o sea, copia su contenido al *área de preparación* (staged).
 * `git status` muestra el estado de los archivos, aparecen archivos no rastreados (untracked), añadidos (new file), etc.
