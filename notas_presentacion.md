@@ -46,8 +46,9 @@ Ayuda
 - Por las dos razones anteriores no se recomienda guardar información sensible (por ejemplo contraseñas).
 
 ##Glosario:
-- Repositorio local - Archivos del sistema git almacenados en el directorio de trabajo.
-- Repositorio remoto - repositorio que no es local.
+- Commit - Confirmación - Cada confirmación es una copia puntual de los archivos como se encuentran en ese momento. Guarda; autor, confirmador, mensaje de confirmación, apuntador a confirmación padre (anterior) y el checksum.
+- Local - Repositorio local - Archivos del sistema git almacenados en el directorio de trabajo.
+- Remoto - Repositorio remoto - repositorio que no es local.
 - Stagin area - area de preparación.
 - Commited / commited - confirmado.
 - Tracked - rastreado.
@@ -56,3 +57,11 @@ Ayuda
 - Pull - 
 - Push - 
 - WIP - work in progress, se usa en los merge request
+- Blob - copia de un archivo almacenado en el repositorio. Sucede al preparar un archivo.
+- Head - Apuntador a la rama que se encuentra activa.
+- Tracking branch - rama de seguimiento - así al hacer pull por ejemplo Git sabe donde hacer el fetch y el merge.
+- ahead - adelantada - por ejemplo una rama adelantada por 2 , tiene 2 confirmaciones que no han sido enviadas a las demás.
+- behind - atrasada 
+- puntual branch - rama puntual - rama que es creada con un propósito puntual y eliminada una vez cumplido su prpopósito. Por ejemplo: se detecta un pequeño defecto en la rama de producción, se crea la rama 'correccion' para parchar el defecto, una vez corregido se mezcla dicha rama con la rama de producción y se elimina la rama 'correccion'.
+- long term branch - rama de larga duración - ramas que tienen una larga vida. Recularmente son casi tan largas como la rama master (o de producción).
+- fork - bifurcación 

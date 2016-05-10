@@ -22,5 +22,10 @@ ___
 - Pon su descripción.
 - 
 
+----------------
 
+###Ejercicio 0:
+- Crear cuenta en github.
+- Hacer un fork de la URL: https://github.com/fhca/PresentacionGIT.git
+- 
 

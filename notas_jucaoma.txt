@@ -1,0 +1,45 @@
+Notas para presentación de git
+(una especie de acordeon para no olvidar cosas en el momento)
+—
+Preguntas para la introducción: --------------------------------
+¿por qué entraron al taller / qué esperan?
+¿son programadores ?
+
+—
+
+Git workflow
+1- Crear rama a partir de master
+2- confirmaciones a esa rama
+3- enviar esa rama a tu fork
+4- abre un pull request en tu git hub
+5- debatir
+5.1- hacer commits
+6- propietario cierra el pull request. (Fusionando si aceptó)
+
+
+@{u} atajo a la rama de seguimiento asociada
+
+
+Ejercicios: ---------------------------------------------
+
+—
+hacer archivos con nombre descriptivo y moverlos por las diferentes areas de git, 
+rastrearlos, 
+dejarlos de rastrear,
+preparar,
+revertir,
+confirmar,
+revertir,
+eliminar,
+cambiar nombre,
+mostrar diferencias,
+
+—
+crear cuenta de github  o gitlab
+de un proyecto publico hacer un fork,
+modificarlo,
+hacer un pull request,
+disfrutar el resultado
+
+—
+
