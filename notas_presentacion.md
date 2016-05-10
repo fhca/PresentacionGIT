@@ -55,4 +55,4 @@ Ayuda
 - Branch - rama.
 - Pull - 
 - Push - 
-- 
+- WIP - work in progress, se usa en los merge request
