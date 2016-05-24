@@ -157,7 +157,10 @@ git branch -h
 git merge <nombreRama> 
 	# mezcla la rama <nombreRama> con la rama actual.
 
-	
+git config --global alias.<alias> '<comando>'
+	# Crea alias. Ejecutar $git alias será como ejecutar $git <comando>
+git config --global alias.visual '!<comando>'
+	# Sirve igual pero <comando> es un comando externo a git
 	
 	______________________ Ayuda ____________________________
 git

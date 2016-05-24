@@ -2,6 +2,7 @@ Notas para presentación de git
 (una especie de acordeon para no olvidar cosas en el momento)
 -
 
+Preguntas para la introducción:
 # Preguntas:
 - ¿Qué es git?
 * ¿Qué es github?
@@ -9,14 +10,15 @@ Notas para presentación de git
 - ¿Cómo se usan?
 	- Crerar cuenta en Github.
 
-- También existe gitlab
+___
 
 _
 
-Preguntas para la introducción: -
 ¿por qué entraron al taller / qué esperan?
 ¿son programadores ?
-
+___
+Comentar sobre gitlab.
+___
 -
 [stash] <— — stash — — [workspace] ——add———> [stagin area] ——commit—— >[repo. local]— — push — — > [upstream repo. (remote)]
 -
