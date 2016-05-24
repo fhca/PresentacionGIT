@@ -1,8 +1,19 @@
 # Glosario comandos comunes.
 
 ```
-git add <archivo>
+git config [--global] user.name "NombreUsuario"
+	# configura el nombre de usuario para la cuenta tipo unix activa.
+git config [--global] user.email "correo@dominio.com”
+	# configura el correo electrónico para la cuenta tipo unix activa.
+git config –list
+	# lista el estado de las variables de configuración.
 
+
+git clone <url.git>
+	# 
+
+git add <archivo>
+	# 
 
 git commit
     # confirma los cambios preparados (lo que está en stagin 
@@ -36,7 +47,7 @@ git log --oneline
     # muestra cada confirmación en una sóla línea.
 git log --stat 
     # muestra estadísticas
-git log --pretty [oneline, short, full, fuller, formar...
+git log --pretty [oneline, short, full, fuller, format...
 git log --graph
 git log --decorate
 git log --oneline
@@ -45,6 +56,8 @@ git log --grep <texto>
     # busca <texto> en los mensajes de las confirmaciones.
 git log --since=[2.weeks]ó[2016-5-1]
 git log --until
+git log --oneline --graph --color —decorate 
+	# la forma mas bonita / completa de historial
 etc...
 
 
@@ -83,12 +96,14 @@ git pull
 	# fetch y merge en un sólo paso. (identifica a qué servidor y qué rama remota está siguiendo la rama actual)
 	
 
-
-git push [nombre-remoto] [nombre-rama] 
+git push
     # Envía todos los commits que se hayan echo. (hay que tener permisos de escritura)
+git push <nombre-remoto> <nombre-rama> 
+    # Especifica el remoto y rama donde se enviaran las confirmaciones.
 git push —delete <nombreRama>
     # elimina la rama <nombreRama> del servidor.
-
+git push -u <nombreRemoto> <nombreRama>
+    # 
 
 git tag 
     # lista etiquetas en orden alfabético.
@@ -104,17 +119,21 @@ git status
 git status -s 
     # lo muestra en versión reducida.
 git status -b 
-    # indica la rama de la que va mostrar el estado.
+    # muestra el nombre de la rama activa.
 
 
 git checkout -b <ramaLocal> <nombreRemoto/nombreRama> 
 	# ó
 git checkout —track <nombreRemoto/nombreRama>
 	# te dá una rama local <ramaLocal> en la que puedes trabajar. Es decir convierte a <RamaLocal> en una rama de seguimiento.
+git checkout -b <nombreRama>
+	#crea y se cambia a nombreRama en una línea:
 
 
 git branch <nombreRama>
 	# crea rama con el nombre <nombreRama>
+git branch -m <nombreViejo> <nombreNuevo>
+	# cambia nombre de rama
 git branch -d <nombreRama>
 	# elimina rama <nombreRama>
 git branch -D <nombreRama>
@@ -125,12 +144,27 @@ git branch —merged
 	# ver ramas fusionadas en rama activa. ( el * significa que su contenido no ha sido incorporado a otras ramas )
 git branch —no-merged
 	# ver ramas que no han sido fusionadas.
-git branch -u <nombreRemoto/nombreRama> —set-upstream-to
+git branch -u <nombreRemoto/nombreRama>
+	# ó
+git branch ---set-upstream-to <nombreRemoto/nombreRama>
 	# asigna rama local a una rama remota
 git branch -vv
 	# ver remotos de seguimiento.
+git branch -h
+	# ayuda sobre ramas
 
 
+git merge <nombreRama> 
+	# mezcla la rama <nombreRama> con la rama actual.
+
+	
+	
+	______________________ Ayuda ____________________________
+git
+	# muestra ayuda muy básica por donde comenzar.
+git help <verb>
+git <verb> --help
+man git-<verb>
 
 
 

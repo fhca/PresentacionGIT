@@ -1,12 +1,25 @@
 Notas para presentación de git
 (una especie de acordeon para no olvidar cosas en el momento)
-—
-Preguntas para la introducción: --------------------------------
+-
+
+# Preguntas:
+- ¿Qué es git?
+* ¿Qué es github?
+* ¿Para qué sirven?
+- ¿Cómo se usan?
+	- Crerar cuenta en Github.
+
+- También existe gitlab
+
+_
+
+Preguntas para la introducción: -
 ¿por qué entraron al taller / qué esperan?
 ¿son programadores ?
 
-—
-
+-
+[stash] <— — stash — — [workspace] ——add———> [stagin area] ——commit—— >[repo. local]— — push — — > [upstream repo. (remote)]
+-
 Git workflow
 1- Crear rama a partir de master
 2- confirmaciones a esa rama

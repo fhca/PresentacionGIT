@@ -58,10 +58,12 @@ Ayuda
 - Push - 
 - WIP - work in progress, se usa en los merge request
 - Blob - copia de un archivo almacenado en el repositorio. Sucede al preparar un archivo.
-- Head - Apuntador a la rama que se encuentra activa.
+- Head - Apuntador a la última confirmación de la rama que se encuentra activa.
 - Tracking branch - rama de seguimiento - así al hacer pull por ejemplo Git sabe donde hacer el fetch y el merge.
 - ahead - adelantada - por ejemplo una rama adelantada por 2 , tiene 2 confirmaciones que no han sido enviadas a las demás.
 - behind - atrasada 
 - puntual branch - rama puntual - rama que es creada con un propósito puntual y eliminada una vez cumplido su prpopósito. Por ejemplo: se detecta un pequeño defecto en la rama de producción, se crea la rama 'correccion' para parchar el defecto, una vez corregido se mezcla dicha rama con la rama de producción y se elimina la rama 'correccion'.
-- long term branch - rama de larga duración - ramas que tienen una larga vida. Recularmente son casi tan largas como la rama master (o de producción).
+- long term branch - rama de larga duración - ramas que tienen una larga vida. Regularmente son casi tan largas como la rama master (o de producción).
 - fork - bifurcación 
+- origin - es el alias que git le da a la primer rama remota que se da de alta.
+- hook - gancho - un script que se ejecuta cada que sucede cierta acción a la que está ligado.
