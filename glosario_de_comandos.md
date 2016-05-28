@@ -5,6 +5,8 @@ git config [--global] user.name "NombreUsuario"
 	# configura el nombre de usuario para la cuenta tipo unix activa.
 git config [--global] user.email "correo@dominio.com”
 	# configura el correo electrónico para la cuenta tipo unix activa.
+git config --global core.editor "editor"
+	# cambia el editor por defecto que se lanza cada que git necesita que edites un archivo.
 git config –list
 	# lista el estado de las variables de configuración.
 

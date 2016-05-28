@@ -2,18 +2,27 @@
 ## Ejercicios ! 
 
 ######preparativos
+* Poner el internet =P.
 * Abrir terminal.
 * Crear carpeta donde van a hacer su cotorreo.
 * Moverse dentro de esa carpeta.
-* Poner el internet =P.
+* `git clone https://github.com/fhca/PresentacionGIT`
 
 ___
 
 ### Configurar git
 
-1. nombre
+* nombre 
+
+`git config --global user.name "NombreUsuario"`
+
 * correo
+
+`git config --global user.email "correo@dominio.com”`
+
 * editor 
+
+`git config --global core.editor "gedit"`
 
 ___
 
@@ -26,74 +35,81 @@ ___
 	* `ls -a`
 1. Crear primer archivo del proyecto.
 	* readme.md es buena idea
-vim readme.md
+	* `se puede crear con un editor o copiar`
 1. Revisar el estado del repositorio.
-git status
+	* `git status`
 1. Preparar primer archivo.
-git add readme.md 
+	* `git add readme.md `
 1. Revisar estado.
-git status
+	* `git status`
 1. Hacer primer confirmación.
-git commit 
+	* `git commit`
 1. Revisar estado.
-git status
+	* `git status`
 1. Revisar historial de confirmaciones.
-git log
-
-
-git status -s
-git commit 
-git status -s
+	* `git log`
 
 Respira...
 
 1. Modificar el primer archivo.
-vim readme.md 
+	* `gedit readme.md `
 1. Revisar estado.
-
+	* `git status`
 1. Crear otro archivo para el proyecto.
-vim principal.c
+	* `se puede crear o copiar 'principal.c'`
 1. Revisar estado.
-git status
+	* `git status`
 1. Crear un archivo no necesario para el proyecto.
 	* v.gr. Una lista de tareas o notas. 
-vim tareas.txt
+	* `copiar 'tareas.txt'`
 1. Revisar estado.
-git status
-git status -s
+	* `git status` ó `git status -s`
 1. Preparar todos los archivos nuevos.
-git add .
+	* `git add .`
 1. Revisar estado.
-git status -s
+	* `git status -s`
 2. des-preparar archivo que no vá en el proyecto.
-git rm --cached tareas.txt 
+	* `git rm --cached tareas.txt `
 3. Revisar estado.
-git status -s
+	* `git status -s`
 3. Confirmar.
+	* `git commit`
 4. Revisar estado.
-git status -s
+	* `git status -s`
 5. Revisar vitacora de confirmaciones.
-git log -p
+	* `git log -p`
 
-Inhala...
+Inhalar...
 
-1. Agregar varios archivos no necesarios para el proyecto.
-Copiarlos desde la carpeta: 
+1. Agregar varios archivos NO necesarios para el proyecto.
+	* `Copiarlos a la raíz desde la carpeta: 'archivosNoNecesarios'`
 2. Agregar varios archivos necesarios para el proyecto.
-Copiarlos desde la carpeta:
+	* `Copiarlos a la raíz desde la carpeta: 'archivosNecesarios'`
 3. Preparar todos.
-git add .
-4. Quitar de preparados todos.
-git rm --cached *
+	* `git add .`
+4. Quitar de preparados todos los archivos.
+	* `git rm --cached *`
 5. agregar .gitignore.
-echo "secreto_*" >> .gitignore
-6. Revisar estado.
-git status
+	* `abrir un editor de texto`
+	* `agregar el texto (sin comillas) "secreto*"`
+	* `guardarlo con el nombre (sin comillas) ".gitignore"`
+6. cambiar nombre de 'tareas.txt' para que séa ignorado.
+	* `por ejemplo 'secreto_tareas.txt'`
+7. Revisar estado.
+	* `git status`
 7. Preparar todos.
-git add .
+	* `git add .`
 8. Revisar estado.
-git status
+	* `git status`
+9. Confirmar los cambios
+	* `git commit`
+5. Revisar vitacora de confirmaciones.
+	* `git log --oneline`
 
+Exhalar...
+
+1. Agregar varios archivos NO necesarios para el proyecto.
+	* `Copiarlos a la raíz desde la carpeta: 'archivosNoNecesarios'`
 
 ___
 
@@ -126,15 +142,16 @@ ___
 1. Clic en: Finish sign up
 1. Verificar el correo: Entra a tu cuenta de correo, busca un correo cuyo remitente es Github, abrir el correo y clic en: Verify email adress.
 - FIN
-- PD. Gitlab existe.
+- PD. GitLab existe.
 
 ___
 
 ### Compartir proyecto propio en Github.
 
-1. Crear repositorio en Github.
-	- Clic en + (está en la esquina superior derecha).
-	- Clic en New repository.
+1. Crear repositorio en GitHub.
+	- En la página de GitHub.
+ 	- Clic en + (está en la esquina superior derecha).
+	- Clic en 'New repository'.
 	- Pon nombre al repositorio.
 	- Pon su descripción.
 
