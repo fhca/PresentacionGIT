@@ -20,29 +20,80 @@ ___
 ### Flujo individual sencillo.
 
 1. Iniciar repositorio vacío.
+	* `mkdir ejercicios`
+	* `cd ejercicios`
 	* `git init`
 	* `ls -a`
 1. Crear primer archivo del proyecto.
 	* readme.md es buena idea
+vim readme.md
 1. Revisar el estado del repositorio.
+git status
 1. Preparar primer archivo.
+git add readme.md 
 1. Revisar estado.
+git status
 1. Hacer primer confirmación.
+git commit 
 1. Revisar estado.
+git status
 1. Revisar historial de confirmaciones.
+git log
+
+
+git status -s
+git commit 
+git status -s
 
 Respira...
 
 1. Modificar el primer archivo.
+vim readme.md 
 1. Revisar estado.
+
 1. Crear otro archivo para el proyecto.
+vim principal.c
 1. Revisar estado.
+git status
 1. Crear un archivo no necesario para el proyecto.
 	* v.gr. Una lista de tareas o notas. 
+vim tareas.txt
 1. Revisar estado.
-1. Preparar todos los archivos nuevos al repositorio.
+git status
+git status -s
+1. Preparar todos los archivos nuevos.
+git add .
 1. Revisar estado.
-1. Revisar historial de confirmaciones.
+git status -s
+2. des-preparar archivo que no vá en el proyecto.
+git rm --cached tareas.txt 
+3. Revisar estado.
+git status -s
+3. Confirmar.
+4. Revisar estado.
+git status -s
+5. Revisar vitacora de confirmaciones.
+git log -p
+
+Inhala...
+
+1. Agregar varios archivos no necesarios para el proyecto.
+Copiarlos desde la carpeta: 
+2. Agregar varios archivos necesarios para el proyecto.
+Copiarlos desde la carpeta:
+3. Preparar todos.
+git add .
+4. Quitar de preparados todos.
+git rm --cached *
+5. agregar .gitignore.
+echo "secreto_*" >> .gitignore
+6. Revisar estado.
+git status
+7. Preparar todos.
+git add .
+8. Revisar estado.
+git status
+
 
 ___
 
