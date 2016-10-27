@@ -1,13 +1,12 @@
-Notas para presentación de git
-(una especie de acordeon para no olvidar cosas en el momento)
+﻿Notas para presentación de git
+(especie de acordeon para no olvidar cosas en el momento)
 __
 Preguntas para la introducción:
 # Preguntas:
 - ¿Qué es git?
-* ¿Qué es github?
+* ¿Qué es github/gitlab/bitbucket?
 * ¿Para qué sirven?
 - ¿Cómo se usan?
-Comentar sobre gitlab.
 ___
 [stash] <——stash—— [workspace] ——add———> [stagin area] ——commit——>[repo. local] ——push——> [upstream repo. (remote)]
 ___
