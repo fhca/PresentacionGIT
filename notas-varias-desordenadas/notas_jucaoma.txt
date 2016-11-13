@@ -1,0 +1,103 @@
+﻿copiar y extraer archivo de git portable.
+mientras se descomprime iniciar con presentación/preguntas
+diferencias entre git-bash git-cmd
+
+# ejercicio inicial, comenzar un respositorio local para condcer las areas y estados. ----------
+mkdir <carpeta>
+cd <carpeta>
+ls -la
+  # esta vacía
+git init
+  # se creó un repositorio (vacío claro)
+ls -la
+  # .git/ ?
+git status
+  # estado de nuestro repositorio (mas adelante lo entenderás mejor)
+vim readme.txt
+  # creamos el primer archivo de nuestro repositorio. Con texto descriptivo de lo que hemos hecho.
+ls -la
+  # 'working directory' ?
+git status
+  # 'untracked'?
+git add readme.txt
+git status
+  # 'staggin area' ?
+git commit -m 'primer commit \nSe agrega el archivo readme.txt'
+git log
+  # commit y sus partes en el log?
+vim readme.txt
+vim principal.c
+ls -la
+git status
+git add -A
+git status
+vim contrasennas.txt
+git status 
+git add -A
+git status
+git rm --cached contrasennas.txt
+git status
+vim .gitignore
+git status
+git add -A
+git commit -m 'ya sabemos: el area de commit , el area de staging, el estado tracked, el estado untracked, preparar muchos archivos, preparar archivos individualmente, ignorar archivos, quitar un archivo del staging area'
+
+
+# trabajo en equipo y flujo al revés, comenzar con un repo remoto ------------
+git clone https://github.com/jucaoma/calculadoraGit.git
+
+
+# revertir cambios ----------------------------
+git log
+# editar todos los archivos (borrar su contenido), prepararlos y hacer un commit con el mensaje 'maldad'.
+más aquí:  http://stackoverflow.com/questions/2733873/reverting-a-single-file-to-a-previous-version-in-git#2734035
+
+
+Notas para presentación de git
+(especie de acordeon para no olvidar cosas en el momento)
+__
+Preguntas a contestar:
+# Preguntas:
+* ¿Qué es git?
+* ¿Qué es github/gitlab/bitbucket?
+* ¿Para qué sirven?
+* ¿Cómo se usan?
+___
+[stash] <——stash—— [workspace] ——add——> [stagin area] ——commit——>[repo. local] ——push——> [upstream repo. (remote)]
+___
+Git workflow
+1- Crear rama a partir de master
+2- confirmaciones a esa rama
+3- enviar esa rama a tu fork
+4- abre un pull request en tu git hub
+5- debatir
+5.1- hacer commits
+6- propietario cierra el pull request. (Fusionando si aceptó)
+
+
+@{u} atajo a la rama de seguimiento asociada
+
+
+Ejercicios: ---------------------------------------------
+
+—
+hacer archivos con nombre descriptivo y moverlos por las diferentes areas de git, 
+rastrearlos, 
+dejarlos de rastrear,
+preparar,
+revertir,
+confirmar,
+revertir,
+eliminar,
+cambiar nombre,
+mostrar diferencias,
+
+—
+crear cuenta de github o gitlab
+de un proyecto publico hacer un fork,
+modificarlo,
+hacer un pull request,
+disfrutar el resultado
+
+—
+
