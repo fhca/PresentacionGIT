@@ -8,10 +8,10 @@ Preguntas para la introducción:
 * ¿Para qué sirven?
 - ¿Cómo se usan?
 
-mensaje de demostración.
 
 ___ 
  - areas y estados de los archivos (con la siguiente gráfica)
+
  - se van a usar términos en inglés para no estar inventando y acostumbrarnos
 ___
 [stash] <——stash—— [workspace] ——add———> [stagin area] ——commit——> [repo. local] ——push——> [upstream repo. (remote)]
