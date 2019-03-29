@@ -1,70 +1,102 @@
 # Glosario comandos comunes.
 
 ```
+
+	______________________ Ayuda ____________________________
+git
+	# muestra ayuda muy básica por donde comenzar.
+git help <verb>
+git <verb> --help
+man git-<verb>
+
+	______________________ Configuración ____________________
 git config [--global] user.name "NombreUsuario"
 	# configura el nombre de usuario para la cuenta tipo unix activa.
+    
 git config [--global] user.email "correo@dominio.com”
 	# configura el correo electrónico para la cuenta tipo unix activa.
+    
 git config --global core.editor "editor"
 	# cambia el editor por defecto que se lanza cada que git necesita que edites un archivo.
+    
 git config –list
 	# lista el estado de las variables de configuración.
 
 
+	______________________  ____________________
 git clone <url.git>
-	# 
+	# hace una copia (regularmente local) de un repositorio (recularmente remoto)
 
 git add <archivo>
-	# 
+	# agrega <archivo> a staging area
 
 git commit
     # confirma los cambios preparados (lo que está en stagin 
 area)
+
 git commit -a 
     # add y commit en una sóla línea (agrega a staging todos los archivos tracked)
+    
 git commit -m "<mensaje>"
+	# pasa los archivos de staging a repository
+
 git commit -v 
     # muestra las diferencias introducidas en éste commit.
+    
 git commit --amend 
-    # corrige el mensaje del commit (justo después de haber hecho el commit)
+    # corrige el mensaje del commit (si se ejecuta justo después de haber hecho el commit)
 
 git rm <archivo>
     # 
+    
 git rm --cached
     # 
 
-
 git mv <nombreActual> <nombreNuevo>
-    # 
+    # mueve/renombra un archivo
     # también se puede hacer con otra erramienta externa, por ejemplo CLI o GUI
 
-
+	______________________ Log ____________________
 git log
     # Historial de commits. En orden cronológico inverso. Muestra el SHA1, identida del autor, fecha, hora y mensaje del commit.
+    
 git log -p 
     # muestra las diferencias introducidas en cada commit.
+    
 git log -3 
     # muestra los últimos 3 commits.
+    
 git log --oneline 
     # muestra cada confirmación en una sóla línea.
+    
 git log --stat 
     # muestra estadísticas
+    
 git log --pretty [oneline, short, full, fuller, format...
+
 git log --graph
+
 git log --decorate
+
 git log --oneline
+
 git log --all
+
 git log --grep <texto> 
     # busca <texto> en los mensajes de las confirmaciones.
+
 git log --since=[2.weeks]ó[2016-5-1]
+
 git log --until
+
 git log --oneline --graph --color —decorate 
 	# la forma mas bonita / completa de historial
 etc...
 
-
+	______________________  ____________________
 git diff 
-    # diferencias entre directorio de trabajo y area de preparación
+    # diferencias entre working directory y staging area
+    
 git diff —staged 
     # diferencias entre area de preparación y repositorio (lo último que se confirmó)
 
@@ -131,7 +163,7 @@ git checkout —track <nombreRemoto/nombreRama>
 git checkout -b <nombreRama>
 	#crea y se cambia a nombreRama en una línea:
 
-
+	______________________  ____________________
 git branch <nombreRama>
 	# crea rama con el nombre <nombreRama>
 git branch -m <nombreViejo> <nombreNuevo>
@@ -164,12 +196,7 @@ git config --global alias.<alias> '<comando>'
 git config --global alias.visual '!<comando>'
 	# Sirve igual pero <comando> es un comando externo a git
 	
-	______________________ Ayuda ____________________________
-git
-	# muestra ayuda muy básica por donde comenzar.
-git help <verb>
-git <verb> --help
-man git-<verb>
+
 
 
 

@@ -1,7 +1,7 @@
 # =)
 ## Ejercicios ! 
 
-######preparativos
+###### Preparativos
 * Poner el internet =P.
 * Abrir terminal.
 * Crear carpeta donde van a hacer su cotorreo.

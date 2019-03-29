@@ -1,4 +1,4 @@
-#Taller de GIT
+# Taller de GIT
 ##Instalación
 ###Fedora
 sudo yum install git-all
@@ -14,7 +14,8 @@ https://git-scm.com/download/win
 ##Configuración inicial
 Nombre y correo
 
-	$ git config --global user.name "John Doe"	$ git config --global user.email johndoe@example.com
+	$ git config --global user.name "John Doe"
+	$ git config --global user.email johndoe@example.com
 
 editor default (editor default del sistema, ej. vi)
 
